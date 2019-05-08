@@ -77,6 +77,7 @@ for port in range(first_port,last_port):
         if result == 0:
             print(Fore.GREEN + "[*] Port %d : Open." %port)
             ResetColor()
+        s.close()
     except KeyboardInterrupt:
         exit()
 
